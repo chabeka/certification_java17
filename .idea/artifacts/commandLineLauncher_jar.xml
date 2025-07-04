@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="commandLineLauncher:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/commandLineLauncher_jar</output-path>
+    <root id="archive" name="commandLineLauncher.jar">
+      <element id="module-output" name="commandLineLauncher" />
+    </root>
+  </artifact>
+</component>
