@@ -1,4 +1,4 @@
-package org.example;
+package org.example.chap2;
 
 public class FormatageExemples {
     public static void main(String[] args) {
