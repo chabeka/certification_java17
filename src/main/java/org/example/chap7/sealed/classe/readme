@@ -1,0 +1,10 @@
+ Les classes scellées (sealed classes) sont une fonctionnalité introduite dans Java 17 qui permet de restreindre les classes
+ qui peuvent étendre ou implémenter une classe ou une interface.
+     -  Une classe scellée n'est pas autorisée à étendre d'une classe d'un autre package
+     -  Toutes les classes qui étendent de la classe scellée doivent être dans le même package
+     -  Les classes qui étendent de la classe scéllée doivent être "final"
+     -  Les classes qui étendent des classes  scéllée ne peuvent pas être étandue car elles sont implicitement finale. Pour rendre
+        les classes qui étendent des classes scéllé "non final" c'est à dire étendable, il faut le définir avec "non-sealed"
+        exemple: classe "Parallelogramme"
+     -  Si classe qui étand est une sous classe de la classe scéllée, on a pas besoin de le lister dans la liste des "permits"
+        Exemple: SealedInnerClasse

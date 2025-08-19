@@ -1,0 +1,26 @@
+    - Type de données : Les énumérations sont des types de données de premier ordre en Java. Elles peuvent être utilisées
+      comme n'importe quel autre type de données.
+    - Constantes : Les valeurs définies dans une énumération sont implicitement public, static, et final.
+      Cela signifie qu'elles sont des constantes.
+    - Méthodes : Les énumérations peuvent avoir des méthodes, des constructeurs et des champs comme les classes ordinaires.
+    - Constructeurs : Les constructeurs d'une énumération sont toujours privés ou package-private.
+      Vous ne pouvez pas créer une instance d'une énumération en dehors de celle-ci.
+      Exemple : enum Mois.
+    - On ne peut pas étendre d'une classe Enum
+    - Lors de l'utilisation d'une énumération dans une expression de "case", l'instruction "case" doit être composée
+      uniquement des valeurs d'énumération sans être précédé du nom de la classe
+    - Il est possible de modifier les champs d'une enumération
+      Exemple: setFevrier dans enum Mois
+    - Une enumération peut implémenter une interface. Exemple dans EnumImplementsInterface.java
+    - Lorsque dans une énumeration, il y a une methode abstraite, toutes les valeurs de l'énumeration doivent fournir
+      une implémentation de cette methode. Exemple dans EnumWithAbstractMethod
+    - Les methodes définies dans une enumération sont des methode par défaut qui sont appliquées à toutes les valeurs. Cependant
+      il est possible de définir une implémentation spécifique dans une des valeur de l'énumération.
+      Exemple: Enum Mois => printDescription()
+    - On ne peut pas instancier une enumeration avec "new"
+    - Il n'est pas possible d'acceder à un champs static non final dans le constructeur de l'enumeration. il faut que le champs soit
+      "static final" ou "pas static"
+      Exemple: JourSemaine => field version
+    - Lorsque l'enum est dans une classe, on peut utiliser n'import quelle visibilté (private, public, ...)
+    - On peut crée une enumertation dans une classe "record"
+    - On peut passe une enumération en paramètre d'une methode
