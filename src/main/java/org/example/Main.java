@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.chap7.defaultmethode.InterfaceMethodeManagementImpl;
+
 import java.io.*;
 import java.time.Duration;
 import java.util.ArrayList;
@@ -31,6 +33,8 @@ public class Main {
         Duration duration = Duration.ofMillis(5000);
         System.out.println(duration);
 
+        int a, b, c=2;
+        System.out.println(c + " " );
         int moon = 9, star = 2 + 2 * 3;
         float sun = star>10 ? 1 : 3;
         double jupiter = (sun + moon) - 1.0f;
@@ -53,6 +57,9 @@ public class Main {
             .flatMap(Collection::stream)
             .collect(Collectors.partitioningBy(notEmpty));
          System.out.println(result);
+
+         var im = new InterfaceMethodeManagementImpl();
+         im.defaultMethode();
     }
 
     public static void executeCommand(String command) {

@@ -1,0 +1,9 @@
+    - une interface fonctionnelle est une interface qui ne contient qu'une seule méthode abstraite
+    - Si une interface fonctionnelle inclut une méthode abstraite avec la même signature qu'une méthode publique trouvée dans
+      la classe Object, ces méthodes ne sont pas prises en compte dans le test de méthode abstraite unique.
+      Exemple: AstucesFunctionalInterface => Territoire La methode toString n'est pas prise en compte dans le test de FI
+    - Il n'est pas possible de redefinir une variable déjà utilisé avant l'expression lambda. Cependant les variable utilisées
+      dans le lambda peuvent être reutilisées après le lambda car leur portée n'exède pas le lambda.
+    - on ne peut pas utiliser l'inférence de type "var" pour une expression lambda.
+      Exemple: AstucesFunctionalInterface.assignLambdaToVar
+    - on peut utiliser le mot clé "final" dans les variables du lambda. Exemple: AstucesFunctionalInterface.finalParameter

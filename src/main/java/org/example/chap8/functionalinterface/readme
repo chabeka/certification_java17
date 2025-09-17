@@ -1,0 +1,4 @@
+1. Référence à une méthode stati
+2. Référence à une méthode d'instance sur un objet particulier
+3. Référence à une méthode d'instance sur un objet arbitraire d'un type particulier
+4. Référence à un constructeur

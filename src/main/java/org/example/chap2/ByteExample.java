@@ -3,6 +3,7 @@ package org.example.chap2;
 public class ByteExample {
 
     public static void main(String[] args) {
+        System.out.println(new ByteExample());
         // Déclaration et initialisation
         byte a = 100;
         byte b = -50;
@@ -40,5 +41,17 @@ public class ByteExample {
         System.out.println("Parsed byte: " + parsedByte);
         System.out.println("Max value: " + Byte.MAX_VALUE);
         System.out.println("Min value: " + Byte.MIN_VALUE);
+    }
+    public int hashcode(){
+        return 100;
+    }
+
+    @Override
+    public int hashCode() {
+        return 100;
+    }
+
+    abstract static class animal{
+        abstract void b();
     }
 }

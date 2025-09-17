@@ -3,7 +3,7 @@ package org.example.chap4.string;
 import static org.example.TextHelper.wrap;
 
 public class StringIndent {
-    public static void main(String[] args) {
+    public static void main(String [] args) {
         new StringIndent().indent2();
     }
 
